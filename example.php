@@ -13,7 +13,7 @@ if(isset($_POST['ytlink'])) {
         $ex = explode('/',$id);
         $id = end($ex);
     } 
-    $jsonData = @file_get_contents("http://api.youtube6download.top/api/?id=fwK7ggA3-bU");
+    $jsonData = @file_get_contents("http://api.youtube6download.top/api/?id=$id");
     $links = json_decode($jsonData,TRUE);
     // echo "<pre>";
     // print_r($links);
